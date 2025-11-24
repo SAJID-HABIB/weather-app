@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #333;
+    padding: 20px;
+}
+
+/* App title */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+form .input input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+form .input input:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Button styling */
+form .button button {
+    padding: 12px 20px;
+    background: #ff7e5f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .button button:hover {
+    background: #feb47b;
+    transform: scale(1.05);
+}
+
+/* Weather card styling */
+#weather {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    min-width: 300px;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+#weather img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#weather h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#weather h4 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form .input input {
+        width: 100%;
+    }
+
+    #weather {
+        width: 90%;
+        padding: 20px;
+    }
+}
